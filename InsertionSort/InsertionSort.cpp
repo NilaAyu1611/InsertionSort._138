@@ -42,15 +42,41 @@ void insertionsort()
 
     for (int i = 1; i < n; i++)     // 1. Looping dengan i dimulai dari 1 hingga n - 1
     {
-       temp = arr[i];      // 2. Simpan nilai arr[i] ke variabel sementara temp
+        temp = arr[i];      // 2. Simpan nilai arr[i] ke variabel sementara temp
 
-      j = i - 1;  // 3. Setting nilai j sama dengan i-1;
+        j = i - 1;  // 3. Setting nilai j sama dengan i-1;
 
-      while (j >= 0 && arr[j] > temp)     // 4. Looping while dimana nilai j lebih besar sama dengan 0 dan array[j] lebih besar dari temp
-      {                                   // arr[j] lebih besar daripada temp
-          arr[j + 1] = arr[j];            // a. simpan arr[j] dalam variabel arr [j + 1]
-          j--;                            // b. Decrement nilai j by 1
-      }
+        while (j >= 0 && arr[j] > temp)     // 4. Looping while dimana nilai j lebih besar sama dengan 0 dan array[j] lebih besar dari temp
+        {                                   // arr[j] lebih besar daripada temp
+            arr[j + 1] = arr[j];            // a. simpan arr[j] dalam variabel arr [j + 1]
+            j--;                            // b. Decrement nilai j by 1
+        }
 
-     arr[j + 1] = temp;              // 5. Simpan nilai temp ke dalam arr[j + 1]
+        arr[j + 1] = temp;              // 5. Simpan nilai temp ke dalam arr[j + 1]
+
+
+        arr[j + 1] = temp;              // 5. Simpan nilai temp ke dalam arr[j + 1]
+
+
+        cout << endl;
+        cout << "\nPass " << i << ": ";     // Output ke layar
+        for (int k = 0; k < n; k++)
+        {                                   // Looping nilai k dimulai dari 0 hingga n-1
+            cout << arr[k] << " ";         // Output ke layar
+        }
+
+    }
+
+};
+void display()
+{
+    cout << endl;                                            // Output baris kosong           
+    cout << "Total Elemen Movement= " << n - 1 << endl;     // cout movement element
+    cout << "\n==============================" << endl;      // Output ke layar
+    cout << "Elemen Array yang telah tersusun" << endl;     // Output ke layar
+    cout << "================================" << endl;     // Output ke layar 
+
+
+
+
 
