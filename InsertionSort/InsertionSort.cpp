@@ -85,6 +85,14 @@ void display()
 }
 
 
+int main()
+{
+    input();        // Memanggil input 
+    insertionsort();    // memanggil insertionsort
+    display();  // memanggil display
+}
+
+
 
 
 
